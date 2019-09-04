@@ -1,14 +1,13 @@
 <%--
-    Document   : index
-    Created on : 21/08/2019, 17:26:44
-    Author     : gutol
+    Document   : produtos
+    Created on : 04/09/2019, 17:44:23
+    Author     : Desenvolvimento
 --%>
 
-<%@page import="modelos.Produto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+ <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Minha Loja</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,8 +20,8 @@
               <a class="navbar-brand" href="index.jsp">Minha Loja</a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Ofertas</a></li>
-              <li><a href="produtos.jsp">Produtos</a></li>
+               <li> <a href="index.jsp"><a href="index.jsp">Ofertas</a></li>
+              <li class="active"><a href="produtos.jsp">Ofertas</a></li>
               <li><a href="sobre.jsp">Sobre</a></li>
             </ul>
 
@@ -60,3 +59,4 @@
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
+
