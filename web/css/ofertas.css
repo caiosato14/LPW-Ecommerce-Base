@@ -1,0 +1,11 @@
+.ofertas{
+   background-color: lightblue;
+   text-align: center;
+}
+
+.ofertas div{
+   display: inline-block;
+   background-color: lightskyblue;
+   width: 30%;
+   text-align: left;
+}

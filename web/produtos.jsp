@@ -14,28 +14,10 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
+<jsp:include page="menu.jsp">
+       <jsp:param name="item" value="produtos" />
+       </jsp:include>
 
-
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.jsp">Minha Loja</a>
-            </div>
-            <ul class="nav navbar-nav">
-               <li> <a href="index.jsp"><a href="index.jsp">Ofertas</a></li>
-              <li class="active"><a href="produtos.jsp">Ofertas</a></li>
-              <li><a href="sobre.jsp">Sobre</a></li>
-            </ul>
-
-
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="Login.jsp">Entrar</a></li>
-
-            </ul>
-
-          </div>
-
-        </nav>
         <div class="container">
         <h1>Produtos da Minha Loja!</h1>
 
