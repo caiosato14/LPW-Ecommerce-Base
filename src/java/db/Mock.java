@@ -1,37 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package db;
 
 import java.util.ArrayList;
 import modelos.Produto;
+import modelos.Usuario;
 
-/**
- *
- * @author Desenvolvimento
- */
 public class Mock {
 
-   private static ArrayList<Produto> lista;
 
    public static void makeMock(){
+      createUsers();
+      createProducts();
 
-      if(lista == null){
+   }
+
+   private static void createUsers(){
+      ArrayList<Usuario> lista;
+
+      if(Usuario.getLista() .isEmpty()){
+         lista = Usuario.getLista();
+
+         Usuario admin = new Usuario();
+         admin.setEmail("admin@ifpr.edu.br");
+         admin.setSenha("admin");
+         admin.setNome("Administrador");
+         lista.add(admin);
+
+         Usuario gerente = new Usuario();
+         gerente.setEmail("gerente@ifpr.edu.br");
+         gerente.setSenha("123");
+         gerente.setNome("Fulano de Tal");
+         lista.add(gerente);
+
+      }
+   }
+   private static void createProducts(){
+         ArrayList<Produto> lista;
+
+      if(Produto.getLista() .isEmpty()){
          lista = Produto.getLista();
-
-         Produto caneta = new Produto();
-         caneta.setDescricao("Caneta Bic");
-         caneta.setPreco(1.5f);
-         caneta.setOferta(true);
-         lista.add(caneta);
-
-         Produto caderno = new Produto();
-         caderno.setDescricao("Caderno Tlibra");
-         caderno.setPreco(5.5f);
-         caderno.setOferta(true);
-         lista.add(caderno);
 
          Produto caneca = new Produto();
          caneca.setDescricao("Caneca");
@@ -54,25 +60,25 @@ public class Mock {
          Produto apontador = new Produto();
          apontador.setDescricao("Apontador");
          apontador.setPreco(2.5f);
-         apontador.setOferta(true);
+         apontador.setOferta(false);
          lista.add(apontador);
 
          Produto pendrive = new Produto();
          pendrive.setDescricao("pendrive");
          pendrive.setPreco(2.5f);
-         pendrive.setOferta(true);
+         pendrive.setOferta(false);
          lista.add(pendrive);
 
          Produto picanha = new Produto();
          picanha.setDescricao("picanha");
          picanha.setPreco(100.0f);
-         picanha.setOferta(true);
+         picanha.setOferta(false);
          lista.add(picanha);
 
          Produto Joãovitor = new Produto();
          Joãovitor.setDescricao("joaovitor");
          Joãovitor.setPreco(0.1f);
-         Joãovitor.setOferta(true);
+         Joãovitor.setOferta(false);
          lista.add(Joãovitor);
       }
 

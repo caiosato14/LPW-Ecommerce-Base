@@ -16,11 +16,13 @@ public class Produto {
     private float preco;
     private boolean oferta;
     private static ArrayList<Produto> lista = new ArrayList();
+
     
+
     public String getDescricao(){
         return this.descricao;
     }
-    
+
     public void setDescricao(String descricao){
         this.descricao = descricao;
     }
@@ -48,6 +50,6 @@ public class Produto {
     public void setOferta(boolean oferta) {
         this.oferta = oferta;
     }
-        
-    
+
+
 }

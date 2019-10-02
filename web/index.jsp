@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Minha Loja</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" herf="css/ofertas.css">
+        <link rel="stylesheet" href="css/ofertas.css">
     </head>
     <body>
 
